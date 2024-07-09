@@ -37,18 +37,18 @@ android {
     afterEvaluate {
         publishing {
             publications {
-                release(MavenPublication) {
+                /*release(MavenPublication) {
                     from components.release
                     groupId = 'ru.anbazhan.library'
                     artifactId = 'final'
                     version = '0.3.7'
-                }
-                /*debug(MavenPublication) {
+                }*/
+                debug(MavenPublication) {
                     from components.debug
                     groupId = 'ru.anbazhan.library'
                     artifactId = 'final-debug'
                     version = '0.3.7'
-                }*/
+                }
             }
         }
     }
